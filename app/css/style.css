@@ -1,3 +1,5 @@
+/* Основной CSS-файл. Определяет общий стиль и стиль шапки сайта */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@
 body {
     background-color: #222;
     color: #fff;
+    min-height: 100vh;
 }
 
 header * {
@@ -22,6 +25,8 @@ header {
     justify-items: center;
     height: 80px;
     background-color: #0C0049;
+    position: fixed;
+    width: 100%;
 }
 
 header .shopcart {
@@ -36,27 +41,50 @@ header .shopcart p {
     font-weight: bold;
 }
 
-header .shopcart .img-container img {
+header .shopcart .cart-img-container img {
     margin-top: 8px;
     display: block;
     max-width: 60px;
 }
 
 header .searchbox {
-    width: 420px;
+    width: 440px;
 }
 
 header .searchbox input {
     display: block;
     padding: 5px 15px;
     margin-top: 22.5px;
-    margin-left: 10px;
+    margin-left: 20px;
     width: 400px;
     font-size: 18px;
     border-radius: 20px;
     border: 2px solid #06A07A;
+    /* border: 2px solid #E52557; */
     /* border-radius: 0; */
     background-color: #111;
     color: #fff;
     content:"Поиск";
+}
+
+.category-header {
+    color: #D4FFF4;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 50px 0;
+}
+
+.headerfix {
+    width: 100%;
+    height: 80px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
