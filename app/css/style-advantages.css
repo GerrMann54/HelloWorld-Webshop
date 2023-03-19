@@ -24,7 +24,6 @@
     background-color: #222;
     flex-shrink: 1;
     overflow: hidden;
-    /* Отключить свойство выше, чтобы удидеть все слайды */
 }
 
 .advantages .slider .container .slideline {
@@ -36,7 +35,7 @@
 }
 
 .advantages .slider .container .slideline .slide {
-    /* Слайд, лобержащий текстовый блок и картинку */
+    /* Слайд, содержащий текстовый блок и картинку */
     display: flex;
     height: 100%;
     background-color: #000;
@@ -89,8 +88,7 @@
 .advantages .slider .container .slideline .slide .txt-container .b-slide:active {
     color: #E52557;
     font-weight: bold;
-    border: 3px solid #fff;
-    border-bottom: 3px solid #aaa;
+    border-color: #fff;
 }
 
 .advantages .slider .container .slideline .slide .txt-container .b-next {
