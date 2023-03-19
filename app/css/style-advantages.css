@@ -70,7 +70,7 @@
     /* Оформление для кнопок смены слайда */
     position: absolute;
     bottom: 30px;
-    left: 30px;
+    left: 20px;
     min-width: 100px;
     background-color: #000;
     padding: 10px;
@@ -88,11 +88,14 @@
 
 .advantages .slider .container .slideline .slide .txt-container .b-slide:active {
     color: #E52557;
+    font-weight: bold;
+    border: 3px solid #fff;
+    border-bottom: 3px solid #aaa;
 }
 
 .advantages .slider .container .slideline .slide .txt-container .b-next {
     /* Смещение одной из кнопок */
-    left: 150px;
+    left: 140px;
 }
 
 .advantages .slider .container .slideline .slide .img-container {
