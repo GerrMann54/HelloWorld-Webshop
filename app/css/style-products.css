@@ -3,3 +3,59 @@
     min-height: 800px;
     background-color: #111;
 }
+
+.products .headpanel {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+}
+
+.products .headpanel h2 {
+    display: inline-block;
+    line-height: 70px;
+    font-family: 'Trebuchet MS';
+    font-size: 36px;
+    /* text-transform: uppercase; */
+    margin-left: 100px;
+    color: #09D6A5;
+}
+
+.products .headpanel .button-container {
+    display: inline-block;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products .headpanel .button-container button {
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    transition: 50ms;
+}
+
+.products .headpanel .button-container button:hover {
+    border-color: #E52557;
+}
+
+.products .headpanel .button-container button:active {
+    border-color: #fff;
+}
+
+.products .container {
+    margin: 50px auto;
+    margin-bottom: 0;
+    width: calc(100% - 100px);
+    min-height: 400px;
+    border: 1px solid white;
+    box-sizing: content-box;
+}
