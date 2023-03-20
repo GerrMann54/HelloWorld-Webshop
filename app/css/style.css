@@ -69,7 +69,7 @@ header .searchbox input {
 }
 
 .category-header {
-    color: #D4FFF4;
+    color: #90F1DA;
     font-family: 'Trebuchet MS';
     text-align: center;
     font-weight: 900;
@@ -77,6 +77,29 @@ header .searchbox input {
     font-size: 30px;
     line-height: 30px;
     padding: 50px 0;
+    position: relative;
+}
+
+.category-header::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background-color: #E52557;
+    position: relative;
+    right: 30px;
+    top: -9px;
+}
+
+.category-header::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 3px;
+    background-color: #E52557;
+    position: relative;
+    left: 30px;
+    top: -9px;
 }
 
 .headerfix {
