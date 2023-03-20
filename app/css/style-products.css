@@ -38,8 +38,10 @@
     font-weight: bold;
     color: #fff;
     background-color: transparent;
-    border: 3px solid #fff;
-    border-radius: 5px;
+    border: none;
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
+    border-radius: 0;
     transition: 50ms;
 }
 
@@ -52,10 +54,84 @@
 }
 
 .products .container {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
     margin: 50px auto;
     margin-bottom: 0;
-    width: calc(100% - 100px);
-    min-height: 400px;
-    border: 1px solid white;
-    box-sizing: content-box;
+    width: calc(100% - 150px);
+    min-height: 500px;
+    /* border: 1px solid white;
+    box-sizing: content-box; */
+}
+
+.products .container .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 500px;
+    min-height: 200px;
+    margin-bottom: 50px;
+    background-color: #222;
+}
+
+.products .container .product .img-container {
+    width: 100%;
+    height: 200px;
+    background-color: #4520CE;
+}
+
+.products .container .product .txt-container {
+    position: relative;
+    color: #fff;
+}
+
+.products .container .product .txt-container h3 {
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-size: 26px;
+    line-height: 30px;
+    margin: 20px 30px;
+    color: #90F1DA;
+}
+
+.products .container .product .txt-container h3::after {
+    display: block;
+    content: "";
+    position: relative;
+    margin: 20px auto;
+    width: 100px;
+    height: 3px;
+    background-color: #E52557;
+}
+
+.products .container .product .txt-container p {
+    font-size: 18px;
+    margin: 20px 30px;
+    line-height: 140%;
+}
+
+.products .container .product .txt-container ul {
+    padding: 10px 0;
+}
+
+.products .container .product .txt-container ul li{
+    margin-left: 50px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Trebuchet MS';
+    list-style: "- ";
+}
+
+.products .container .product .category {
+    margin-left: 30px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #888;
+}
+
+.products .container .product .button-container {
+    width: 100%;
+    height: 60px;
+    border-top: 2px solid #fff;
 }

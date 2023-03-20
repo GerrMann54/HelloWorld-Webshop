@@ -24,7 +24,7 @@ header {
     justify-content: center;
     justify-items: center;
     height: 80px;
-    background-color: #0C0049;
+    background-color: #4520CE;
     position: fixed;
     width: 100%;
     z-index: 90;
@@ -60,7 +60,7 @@ header .searchbox input {
     width: 400px;
     font-size: 18px;
     border-radius: 20px;
-    border: 2px solid #06A07A;
+    border: 2px solid #09D6A5;
     /* border: 2px solid #E52557; */
     /* border-radius: 0; */
     background-color: #111;
