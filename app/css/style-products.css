@@ -125,13 +125,69 @@
 
 .products .container .product .category {
     margin-left: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 14px;
     color: #888;
 }
 
-.products .container .product .button-container {
-    width: 100%;
+.products .container .product .purchase-block {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 50px);
     height: 60px;
-    border-top: 2px solid #fff;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    /* border-top: 2px solid #fff; */
+}
+
+.products .container .product .purchase-block .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products .container .product .purchase-block .button-container button {
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    padding: 0 25px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #000;
+    transition: 75ms;
+}
+
+/* .purchase-block .button-container button:hover {
+    line-height: 55px !important;
+    border-radius: 30px !important;
+} */
+
+.button-container .buy {
+    background-color: #E52557 !important;
+}
+
+.button-container .buy:active {
+    color: #E52557 !important;
+    background-color: #000 !important;
+}
+
+.button-container .details:active {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.products .container .product .purchase-block .price {
+    line-height: 60px;
+    font-size: 24px;
+    color: #ddd;
+}
+
+.products .container .product .footer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
