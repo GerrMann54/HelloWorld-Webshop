@@ -3,17 +3,48 @@
 .advantages {
     /* Основной блок */
     width: 100%;
-    height: 700px;
+    height: 576px;
     background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .advantages .slider {
     /* Задний фон для слайдера */
     width: 100%;
     height: 440px;
-    background: rgb(31,11,117);
-    background: linear-gradient(90deg, rgba(31,11,117,1) 50%, rgba(6,160,122,1) 50%);
+    background-color: #3215A2;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.advantages .slider .b-slide {
+    position: absolute;    
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #E52557;
+    transition: 100ms;
+}
+
+.advantages .slider .b-slide:active {
+    background-color: #000;
+    color: #E52557;
+}
+
+.advantages .slider .b-prev {
+    right: calc(50% + 420px);
+}
+
+.advantages .slider .b-next {
+    left: calc(50% + 420px);
 }
 
 .advantages .slider .container {
@@ -50,13 +81,15 @@
     position: relative;
 }
 
+.advantages .slider .container .slideline .slide .txt-container .firstline {
+    /* margin-top: 30px; */
+    font-size: 16px;
+    color: #aaa;
+}
+
 .advantages .slider .container .slideline .slide .txt-container h3 {
     /* Заголовок слайда */
-    font-family: 'Trebuchet MS';
     margin: 25px 10px 25px 30px;
-    font-size: 28px;
-    font-weight: 900;
-    color: #D4FFF4;
 }
 
 .advantages .slider .container .slideline .slide .txt-container p {
@@ -66,36 +99,9 @@
     font-size: 18px;
 }
 
-.advantages .slider .container .slideline .slide .txt-container .b-slide {
-    /* Оформление для кнопок смены слайда */
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-    min-width: 100px;
-    background-color: #000;
-    padding: 10px;
-    font-size: 16px;
-    line-height: 16px;
-    font-family: 'Trebuchet MS';
-    color: #fff;
-    border: 3px solid #E52557;
-    border-radius: 30px;
-    transition: 100ms;
-}
-
-.advantages .slider .container .slideline .slide .txt-container .b-slide:hover {
-    font-size: 18px;
-}
-
-.advantages .slider .container .slideline .slide .txt-container .b-slide:active {
-    color: #E52557;
-    font-weight: bold;
-    border-color: #fff;
-}
-
 .advantages .slider .container .slideline .slide .txt-container .b-next {
     /* Смещение одной из кнопок */
-    left: 140px;
+    left: 70px;
 }
 
 .advantages .slider .container .slideline .slide .img-container {

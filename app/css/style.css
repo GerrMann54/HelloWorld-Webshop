@@ -6,7 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Trebuchet MS';
 }
 
 body {
@@ -69,7 +69,8 @@ header .shopcart .cart-img-container img {
 
 header .searchbox {
     height: 100%;
-    width: 440px;
+    width: 40%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,49 +80,22 @@ header .searchbox input {
     display: block;
     padding: 5px 15px;
     margin: 0 auto;
-    width: 400px;
+    width: calc(100% - 50px);
     font-size: 18px;
     border-radius: 20px;
     border: 2px solid #09D6A5;
     /* border: 2px solid #E52557; */
     /* border-radius: 0; */
     background-color: #111;
-    color: #fff;
+    color: #888;
     outline: none;
 }
 
-.category-header {
-    color: #90F1DA;
-    font-family: 'Trebuchet MS';
-    text-align: center;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 30px;
+h3 {
+    font-size: 28px;
+    font-weight: bold;
     line-height: 30px;
-    padding: 50px 0;
-    position: relative;
-}
-
-.category-header::before {
-    content: "";
-    display: inline-block;
-    width: 100px;
-    height: 3px;
-    background-color: #E52557;
-    position: relative;
-    right: 30px;
-    top: -9px;
-}
-
-.category-header::after {
-    content: "";
-    display: inline-block;
-    width: 100px;
-    height: 3px;
-    background-color: #E52557;
-    position: relative;
-    left: 30px;
-    top: -9px;
+    color: #90F1DA;
 }
 
 .headerfix {
