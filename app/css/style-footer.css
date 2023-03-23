@@ -1,0 +1,19 @@
+footer {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background-color: #000;
+    color: #888;
+}
+
+footer div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div p {
+    text-align: center;
+}

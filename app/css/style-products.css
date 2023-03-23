@@ -6,35 +6,26 @@
 
 .products .headpanel {
     width: 100%;
-    height: 70px;
-    background-color: #000;
+    background-color: transparent;
     color: #fff;
-    display: flex;
-}
-
-.products .headpanel h2 {
-    display: inline-block;
-    line-height: 70px;
-    font-family: 'Trebuchet MS';
-    font-size: 36px;
-    /* text-transform: uppercase; */
-    margin-left: 100px;
-    color: #09D6A5;
+    justify-content: center;
+    height: 70px;
 }
 
 .products .headpanel .button-container {
-    display: inline-block;
-    margin-left: 50px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
 }
 
 .products .headpanel .button-container button {
     font-family: 'Trebuchet MS';
     font-size: 20px;
     line-height: 20px;
+    width: 200px;
     padding: 10px 30px;
+    margin: 0 auto;
     font-weight: bold;
     color: #fff;
     background-color: transparent;
@@ -46,20 +37,21 @@
 }
 
 .products .headpanel .button-container button:hover {
-    border-color: #E52557;
+    color: #30E3CA;
+    border-color: #30E3CA;
 }
 
 .products .headpanel .button-container button:active {
-    border-color: #fff;
+    color: #fff;
 }
 
 .products .container {
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 50px auto;
+    margin: 70px auto;
     margin-bottom: 0;
-    width: calc(100% - 150px);
+    width: calc(100% - 50px);
     min-height: 500px;
     /* border: 1px solid white;
     box-sizing: content-box; */
@@ -69,9 +61,10 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin: 0 10px;
     width: 500px;
     min-height: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     background-color: #222;
 }
 
@@ -89,10 +82,8 @@
 .products .container .product .txt-container h3 {
     text-align: center;
     font-family: 'Trebuchet MS';
-    font-size: 26px;
     line-height: 30px;
     margin: 20px 30px;
-    color: #90F1DA;
 }
 
 .products .container .product .txt-container h3::after {
@@ -102,7 +93,7 @@
     margin: 20px auto;
     width: 100px;
     height: 3px;
-    background-color: #E52557;
+    background-color: #F5F5F5;
 }
 
 .products .container .product .txt-container p {
@@ -132,7 +123,7 @@
 
 .products .container .product .purchase-block {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: calc(100% - 50px);
     height: 60px;
     margin: 0 auto;
@@ -156,22 +147,18 @@
     border: none;
     border-radius: 25px;
     color: #fff;
-    background-color: #000;
-    transition: 75ms;
+    background-color: transparent;
+    transition: 100ms;
 }
 
-/* .purchase-block .button-container button:hover {
-    line-height: 55px !important;
-    border-radius: 30px !important;
-} */
-
 .button-container .buy {
-    background-color: #E52557 !important;
+    color: #30E3CA !important;
+    background-color: #40514E !important;
 }
 
 .button-container .buy:active {
-    color: #E52557 !important;
-    background-color: #000 !important;
+    color: #40514E !important;
+    background-color: #30E3CA !important;
 }
 
 .button-container .details:active {
