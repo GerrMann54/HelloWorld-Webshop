@@ -64,6 +64,7 @@
     position: relative;
     left: 0;
     display: flex;
+    transition: 500ms;
 }
 
 .advantages .slider .container .slideline .slide {
