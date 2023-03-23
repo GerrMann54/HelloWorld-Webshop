@@ -10,19 +10,17 @@
 .promo .slider-container {
     margin: 20px auto;
     height: 300px;
-    width: 100%;
+    max-width: 1200px;
     overflow: hidden;
-    /* background-color: #999; */
-    /* overflow: hidden; */
+
 }
 
 .promo .slider-container .slideline {
     height: 100%;
     display: flex;
     position: relative;
-    left: calc(50vw - 310px);
-    /* Здесь должны быть видны соседние слайды. Свойство выше устанавливает 
-    изначальное смещение так, чтобы первый слайд  */
+    transition: 300ms;
+    left: 0;
 }
 
 .promo .slider-container .slideline .slide {

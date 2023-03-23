@@ -10,13 +10,14 @@
     color: #fff;
     justify-content: center;
     height: 70px;
+    border-bottom: 1px solid #40514E;
 }
 
 .products .headpanel .button-container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
 }
 
 .products .headpanel .button-container button {
