@@ -24,7 +24,7 @@ header {
     justify-content: center;
     justify-items: center;
     height: 80px;
-    background-color: #4520CE;
+    background-color: #2F89FC;
     position: fixed;
     width: 100%;
     z-index: 90;
@@ -44,7 +44,7 @@ header .shopcart .cart-img-container {
 }
 
 header .shopcart .cart-img-container:hover {
-    background-color: #3215A2 !important;
+    background-color: #2978CE !important;
     cursor: pointer;
 }
 
@@ -83,11 +83,11 @@ header .searchbox input {
     width: calc(100% - 50px);
     font-size: 18px;
     border-radius: 20px;
-    border: 2px solid #09D6A5;
+    border: 2px solid #30E3CA;
     /* border: 2px solid #E52557; */
     /* border-radius: 0; */
     background-color: #111;
-    color: #888;
+    color: #fff;
     outline: none;
 }
 
@@ -95,7 +95,7 @@ h3 {
     font-size: 28px;
     font-weight: bold;
     line-height: 30px;
-    color: #90F1DA;
+    color: #30E3CA;
 }
 
 .headerfix {

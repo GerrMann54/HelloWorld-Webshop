@@ -6,7 +6,7 @@
 
 .products .headpanel {
     width: 100%;
-    background-color: #000;
+    background-color: transparent;
     color: #fff;
     justify-content: center;
     height: 70px;
@@ -16,7 +16,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
 }
 
 .products .headpanel .button-container button {
@@ -37,8 +37,8 @@
 }
 
 .products .headpanel .button-container button:hover {
-    color: #E52557;
-    border-color: #E52557;
+    color: #30E3CA;
+    border-color: #30E3CA;
 }
 
 .products .headpanel .button-container button:active {
@@ -84,7 +84,6 @@
     font-family: 'Trebuchet MS';
     line-height: 30px;
     margin: 20px 30px;
-    color: #90F1DA;
 }
 
 .products .container .product .txt-container h3::after {
@@ -94,7 +93,7 @@
     margin: 20px auto;
     width: 100px;
     height: 3px;
-    background-color: #E52557;
+    background-color: #F5F5F5;
 }
 
 .products .container .product .txt-container p {
@@ -149,16 +148,17 @@
     border-radius: 25px;
     color: #fff;
     background-color: transparent;
-    transition: 75ms;
+    transition: 100ms;
 }
 
 .button-container .buy {
-    background-color: #E52557 !important;
+    color: #30E3CA !important;
+    background-color: #40514E !important;
 }
 
 .button-container .buy:active {
-    color: #E52557 !important;
-    background-color: #000 !important;
+    color: #40514E !important;
+    background-color: #30E3CA !important;
 }
 
 .button-container .details:active {
