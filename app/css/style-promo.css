@@ -10,7 +10,8 @@
 .promo .slider-container {
     margin: 20px auto;
     height: 300px;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1160px;
     overflow: hidden;
 
 }
@@ -26,7 +27,7 @@
 .promo .slider-container .slideline .slide {
     border-radius: 20px;
     background-color: mediumseagreen;
-    margin: 0 20px;
+    margin-right: 40px;
     width: 560px;
     height: 100%;
     flex-shrink: 0;
