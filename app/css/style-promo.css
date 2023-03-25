@@ -10,7 +10,7 @@
 .promo .slider-container {
     margin: 20px auto;
     height: 300px;
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 1160px;
     overflow: hidden;
 
