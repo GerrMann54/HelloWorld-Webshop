@@ -4,7 +4,8 @@ let cathegories = [];       // Список категорий, по котор�
 
 function Product(prod) {        // Конструктор объекта товара
 
-    this.id = Number(prod.getAttribute('data-product-id'));
+    this.htmlObject = prod;
+    this.product_id = Number(prod.getAttribute('data-product-id'));
     this.price = Number(prod.getAttribute('data-product-price'));
     this.cathegory = prod.getAttribute('data-product-cathegory');       // Получение значений из атрибутов HTML
 
@@ -12,7 +13,7 @@ function Product(prod) {        // Конструктор объекта тов�
     this.name = prod.querySelector('h3').innerText;                 // Получение имени из заголовка товара
     this.htmlCathegory = prod.querySelector('.cathegory span');     // Получение HTML-ссылки на название категории
     this.htmlPrice = prod.querySelector('.price');                  // Цена
-    this.buttonBuy = prod.querySelector('.buy');                    // Получение кнопки "Купить"
+    this.buttonBuy = prod.querySelector('.buy');                    // Кнопка "Купить"
     this.buttonDetails = prod.querySelector('.details');            // Кнопка "Подробнее"
     
     this.htmlCathegory.innerText = this.cathegory;
@@ -32,7 +33,7 @@ function initProducts() {
     products = [];      // Очистка списков на случай,
     cathegories = [];   // если эта функция будет вызываться повторно
 
-    for (let n = 0; n < htmlProducts.length; n++) {
+    for (let n = 0; n < htmlProducts.length; n++) {         // Инициализация товаров
         let prod = new Product(htmlProducts[n]);
         products.push(prod);
 
@@ -47,7 +48,7 @@ function initSortButtons() {
     const htmlSortButtons = document.querySelectorAll('.products .headpanel .menu button');
     
     for (let n = 0; n < htmlSortButtons.length; n++) {
-        htmlSortButtons[n].addEventListener('click', sortProducts);
+        htmlSortButtons[n].addEventListener('click', sortProducts);         // Инициализация кнопок сортировки
     }
 }
 
@@ -56,24 +57,24 @@ initSortButtons();
 
 function sortProducts(event) {
 
-    let cathegory = event.target.getAttribute('data-product-cathegory');
+    let cathegory = event.target.getAttribute('data-product-cathegory');     // Получение имени категории из нажатой кнопки
     console.log('Sorting by cathegory: ' + cathegory);
 
     if (cathegory === 'all') {
 
-        for (let n = 0; n < htmlProducts.length; n++) {
-            htmlProducts[n].style.display = 'flex';
+        for (let prod in products) {
+            products[prod].htmlObject.style.display = 'flex';       // Если нажата кнопка "Все категории, то роказать все товары"
         }
     }
 
-    else {
+    else {      // Иначе показывать товары, категория которых совпадает с категорией кнопки
 
-        for (let n = 0; n < htmlProducts.length; n++) {
-            if (htmlProducts[n].getAttribute('data-product-cathegory') === cathegory) {
-                htmlProducts[n].style.display = 'flex';
+        for (let prod in products) {
+            if (products[prod].htmlObject.getAttribute('data-product-cathegory') === cathegory) {
+                products[prod].htmlObject.style.display = 'flex';       // Если категории совпадают, то показывать товар
             }
             else {
-                htmlProducts[n].style.display = 'none';
+                products[prod].htmlObject.style.display = 'none';       // Иначе скрыть его
             }
         }
     }
