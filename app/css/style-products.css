@@ -20,7 +20,7 @@
     justify-content: center;
 }
 
-.products .headpanel .button-container button {
+.products .headpanel button {
     font-family: 'Trebuchet MS';
     font-size: 20px;
     line-height: 20px;
@@ -36,12 +36,12 @@
     transition: 50ms;
 }
 
-.products .headpanel .button-container button:hover {
+.products .headpanel button:hover {
     color: #30E3CA;
     /* border-color: #30E3CA; */
 }
 
-.products .headpanel .button-container button:active {
+.products .headpanel button:active {
     color: #fff;
 }
 
@@ -66,7 +66,7 @@
     box-sizing: content-box; */
 }
 
-.products .container .product {
+.products .product {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -77,25 +77,25 @@
     background-color: #222;
 }
 
-.products .container .product .img-container {
+.product .img-container {
     width: 100%;
     height: 200px;
     background-color: #4520CE;
 }
 
-.products .container .product .txt-container {
+.product .txt-container {
     position: relative;
     color: #fff;
 }
 
-.products .container .product .txt-container h3 {
+.product h3 {
     text-align: center;
     font-family: 'Trebuchet MS';
     line-height: 30px;
     margin: 20px 30px;
 }
 
-.products .container .product .txt-container h3::after {
+.product h3::after {
     display: block;
     content: "";
     position: relative;
@@ -105,17 +105,17 @@
     background-color: #F5F5F5;
 }
 
-.products .container .product .txt-container p {
+.product .txt-container p {
     font-size: 18px;
     margin: 20px 30px;
     line-height: 140%;
 }
 
-.products .container .product .txt-container ul {
+.product .txt-container ul {
     padding: 10px 0;
 }
 
-.products .container .product .txt-container ul li{
+.product .txt-container ul li{
     margin-left: 50px;
     font-size: 18px;
     line-height: 24px;
@@ -123,14 +123,14 @@
     list-style: "- ";
 }
 
-.products .container .product .cathegory {
+.product .cathegory {
     margin-left: 30px;
     margin-bottom: 20px;
     font-size: 14px;
     color: #888;
 }
 
-.products .container .product .purchase-block {
+.product .purchase-block {
     display: flex;
     justify-content: space-around;
     width: calc(100% - 50px);
@@ -140,13 +140,13 @@
     /* border-top: 2px solid #fff; */
 }
 
-.products .container .product .purchase-block .button-container {
+.product .purchase-block .button-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.products .container .product .purchase-block .button-container button {
+.product .purchase-block button {
     font-size: 18px;
     line-height: 50px;
     text-transform: uppercase;
@@ -175,13 +175,13 @@
     color: #000 !important;
 }
 
-.products .container .product .purchase-block .price {
+.product .purchase-block .price {
     line-height: 60px;
     font-size: 24px;
     color: #ddd;
 }
 
-.products .container .product .footer {
+.product .footer {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
