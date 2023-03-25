@@ -59,7 +59,8 @@
     flex-wrap: wrap;
     margin: 70px auto;
     margin-bottom: 0;
-    width: calc(100% - 50px);
+    width: calc(100% - 20px);
+    max-width: 2000px;
     min-height: 500px;
     /* border: 1px solid white;
     box-sizing: content-box; */
