@@ -23,9 +23,11 @@ function Product(prod) {        // Конструктор объекта тов�
         console.log(this.name + ' added to shopcart');
     });
 
-    this.buttonDetails.addEventListener('click', () => {
+    this.buttonDetails.addEventListener('click', this.showDetails);
+
+    this.showDetails = () => {
         console.log(this.name + ': details are required');
-    });
+    }
 }
 
 function initProducts() {
