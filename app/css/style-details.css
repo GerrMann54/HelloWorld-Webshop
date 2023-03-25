@@ -11,7 +11,7 @@
 }
 
 .details .purchase-block {
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #222;
     margin-left: 0;
     margin-right: 0;
@@ -22,9 +22,20 @@
 }
 
 .details .purchase-block * {
-    width: 160px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.details .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 180px;
+} 
+
+.details .button-container * {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .details .purchase-block .price {

@@ -49,6 +49,8 @@ function Product(prod) {        // Конструктор объекта тов�
         this.buttonCloseDetails = document.querySelector('.blackbanner .details .close');
         this.buttonCloseDetails.addEventListener('click', this.closeDetails);
 
+        document.querySelector('.blackbanner .details .price').innerText = this.price + ' Р';
+
         this.detailsWindow = document.querySelector('.blackbanner .details .product')       // Место, куда вставлять текстоый контейнер для подробного описания
         this.detailsWindow.insertAdjacentHTML('beforeEnd', `<div class="txt-container"></div>`);
         this.detailsTxtContainer = this.detailsWindow.querySelector('.txt-container');      // Создание текстового контейнера
