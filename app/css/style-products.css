@@ -157,6 +157,7 @@
     border-radius: 25px;
     color: #fff;
     background-color: transparent;
+    transition-property: 'background-color', 'color';
     transition: 100ms;
 }
 
@@ -188,6 +189,6 @@
     justify-content: end;
 }
 
-.invisible {
-    display:block
+.inshopcart {
+    font-size: 14px !important;
 }

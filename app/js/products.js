@@ -27,6 +27,8 @@ function Product(prod) {        // Конструктор объекта тов�
         blackbanner.style.display = 'none';
         detailsWindow.style.display = 'none';       // Отключение видимости блоков
 
+        this.buttonBuyB.classList.remove('inshopcart')
+        this.buttonBuyB.innerHTML = 'В корзину';
         this.buttonBuyB.removeEventListener('click', this.addToCart);
         this.buttonCloseDetails.removeEventListener('click', this.closeDetails);
         this.detailsTxtContainer.remove();
@@ -34,7 +36,7 @@ function Product(prod) {        // Конструктор объекта тов�
         delete this.buttonCloseDetails;
         delete this.detailsWindow;
         delete this.detailsTxtContainer;
-        // Удаление всех связей с окном с подробной информацией
+        // Удаление всех связей с окном подробной информации
     }
 
     this.showDetails = () => {
@@ -62,10 +64,13 @@ function Product(prod) {        // Конструктор объекта тов�
                 }
             }
         }
+        shopCart.update();
     }
 
     this.addToCart = () => {
+
         console.log(this.name + ' added to shopcart');
+        shopCart.add(this.product_id);
     }
 
     this.buttonBuy.addEventListener('click', this.addToCart);
