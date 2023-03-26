@@ -74,6 +74,7 @@ header .searchbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 header .searchbox input {
@@ -84,11 +85,37 @@ header .searchbox input {
     font-size: 18px;
     border-radius: 20px;
     border: 2px solid #30E3CA;
-    /* border: 2px solid #E52557; */
-    /* border-radius: 0; */
     background-color: #111;
     color: #fff;
     outline: none;
+}
+
+header .searchbox .result {
+    display: none;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    max-height: 800px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #30E3CA;
+    border-radius: 5px;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+
+.result div {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+    z-index: 96;
+    cursor: pointer;
+}
+
+.result div:hover {
+    background-color: #333;
 }
 
 h3 {
