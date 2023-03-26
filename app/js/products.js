@@ -41,7 +41,6 @@ function Product(prod) {        // Конструктор объекта тов�
 
     this.showDetails = () => {
 
-        console.log(this.name + ': details are required');
         blackbanner.style.display = 'flex';
         detailsWindow.style.display = 'block';       // Установка видимости для бока подробной информации
 
@@ -64,12 +63,13 @@ function Product(prod) {        // Конструктор объекта тов�
                 }
             }
         }
-        shopCart.update();
+
+        this.buttonBuyB.classList.remove('inshopcart') // Настройка отображения кнопки в окне подробностей.
+        this.buttonBuyB.innerHTML = 'В корзину';       // Если товар не в корзине, то показывать кнопку по умолчанию.
+        shopCart.update();                             // Иначе она изменится на "Перейти к корзине"
     }
 
     this.addToCart = () => {
-
-        console.log(this.name + ' added to shopcart');
         shopCart.add(this.product_id);
     }
 
