@@ -133,6 +133,7 @@ const productData =
     0: [ // Обозначает ID товара
          // Данные для каждого товара "приходят" в виде массива с HTML элементами
         "<h3>Базовая вёрстка HTML5 + CSS3</h3>",
+        '<img src="./img/product0.png">',
         "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti minima magnam perspiciatis dignissimos maxime esse officia voluptates error iusto at, debitis ut ea qui exercitationem non ab eos commodi beatae, molestiae voluptatibus cumque! Ratione vitae mollitia expedita quibusdam consequatur.</p>",
             `<ul>
                 <li>Lorem ipsum dolor sit amet</li>
@@ -148,7 +149,7 @@ const productData =
     ],
     1: [
         "<h3>Продвинутая вёрстка HTML5 + CSS3",
-        '<img src="./img/logo.png">',
+        '<img src="./img/product1.jpg">',
         "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti minima magnam perspiciatis dignissimos maxime esse officia voluptates error iusto at, debitis ut ea qui exercitationem non ab eos commodi beatae, molestiae voluptatibus cumque! Ratione vitae mollitia expedita quibusdam consequatur.</p>",
         "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti minima magnam perspiciatis dignissimos maxime esse officia voluptates error iusto at, debitis ut ea qui exercitationem non ab eos commodi beatae, molestiae voluptatibus cumque! Ratione vitae mollitia expedita quibusdam consequatur.</p>",
             `<ul>
@@ -163,7 +164,7 @@ const productData =
     ],
     2: [
         "<h3>Программирование на JavaScript",
-        '<img src="./img/logo.png">',
+        '<img src="./img/product2.jpg">',
         "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti minima magnam perspiciatis dignissimos maxime esse officia voluptates error iusto at, debitis ut ea qui exercitationem non ab eos commodi beatae, molestiae voluptatibus cumque! Ratione vitae mollitia expedita quibusdam consequatur.</p>",
         "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti minima magnam perspiciatis dignissimos maxime esse officia voluptates error iusto at, debitis ut ea qui exercitationem non ab eos commodi beatae, molestiae voluptatibus cumque! Ratione vitae mollitia expedita quibusdam consequatur.</p>",
             `<ul>
@@ -186,4 +187,13 @@ const productData =
         '<p>Doloremque facere rerum sunt laudantium repellat aliquid voluptas voluptatem, quos similique consectetur nesciunt accusamus dolorum aut eius, repellendus amet iste soluta quo unde laboriosam commodi. Quibusdam, repellendus ducimus quae reiciendis a illo minus quam consequatur repellat eveniet quasi, blanditiis repudiandae, numquam at.</p>',
         '<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sequi quibusdam beatae saepe exercitationem esse doloribus ratione praesentium nostrum nemo earum ipsa harum ea, ex unde eum in laboriosam sunt molestias necessitatibus?</p>',
     ],
+    3: [
+        '<img src="./img/product3.png">'
+    ],
+    4: [
+        '<img src="./img/product4.jpg">'
+    ],
+    5: [
+        '<img src="./img/product5.jpg">'
+    ]
 };

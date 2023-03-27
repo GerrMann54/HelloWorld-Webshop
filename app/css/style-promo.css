@@ -25,10 +25,9 @@
 }
 
 .promo .slider-container .slideline .slide {
-    border-radius: 20px;
-    background-color: mediumseagreen;
     margin-right: 40px;
     width: 560px;
     height: 100%;
     flex-shrink: 0;
+    overflow: hidden;
 }
