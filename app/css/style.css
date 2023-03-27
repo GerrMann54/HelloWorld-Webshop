@@ -1,0 +1,155 @@
+/* Основной CSS-файл. Определяет общий стиль и стиль шапки сайта */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+    min-height: 100vh;
+}
+
+header * {
+    max-height: 80px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 80px;
+    background-color: #2F89FC;
+    position: fixed;
+    width: 100%;
+    z-index: 90;
+}
+
+header .shopcart {
+    display: flex;
+    justify-content: start;
+    justify-items: center;
+    width: 240px;
+}
+
+header .shopcart .cart-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .shopcart .cart-img-container:hover {
+    background-color: #2978CE !important;
+    cursor: pointer;
+}
+
+header .shopcart .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .shopcart .wrap p {
+    display: block;
+    font-family: 'Trebuchet MS';
+    line-height: 1;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+header .shopcart .cart-img-container img {
+    display: block;
+    max-width: 60px;
+}
+
+header .searchbox {
+    height: 100%;
+    width: 40%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+header .searchbox input {
+    display: block;
+    padding: 5px 15px;
+    margin: 0 auto;
+    width: calc(100% - 50px);
+    font-size: 18px;
+    border-radius: 20px;
+    border: 2px solid #30E3CA;
+    background-color: #111;
+    color: #fff;
+    outline: none;
+}
+
+header .searchbox .result {
+    display: none;
+    flex-direction: column;
+    width: calc(100% - 80px);
+    max-height: 800px;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #30E3CA;
+    border-radius: 5px;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+
+.result div {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+    z-index: 96;
+    cursor: pointer;
+}
+
+.result div:hover {
+    background-color: #333;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #30E3CA;
+}
+
+.headerfix {
+    width: 100%;
+    height: 80px;
+    background-color: #111;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+}
+
+.blackbanner {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 91;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-advantages.css">
+    <link rel="stylesheet" href="./css/style-promo.css">
+    <link rel="stylesheet" href="./css/style-products.css">
+    <link rel="stylesheet" href="./css/style-footer.css">
+    <link rel="stylesheet" href="./css/style-details.css">
+    <link rel="stylesheet" href="./css/style-shopcart.css">
+    <title>LearnBox - стань крутым разработчиком</title>
+</head>
+
+<body>
+    <header>
+        <div class="logobox img-container">
+            <img src="./img/logo.png" alt="LOGO">
+        </div>
+        <div class="searchbox">
+            <input type="text" placeholder="Поиск...">
+            <div class="result"></div>
+        </div>
+        <div class="shopcart">
+            <div class="cart-img-container">
+                <img src="./img/cart.png" alt="CART">
+            </div>
+            <div class="wrap">
+                <p class="total">0 руб.</p>
+            </div>
+        </div>
+    </header>
+    <div class="headerfix"></div>
+    <div class="advantages">
+        <!-- <h2 class="category-header">Почему стоит выбрать нас?</h2> -->
+        <div class="slider">
+            <button class="b-slide b-next">></button>
+            <button class="b-slide b-prev"><</button>
+            <div class="container">
+                <div class="slideline">
+                    <div class="slide">
+                        <div class="txt-container">
+                            <p class="firstline">Причина выбрать нас</p>
+                            <h3>Круглосуточная поддержка</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a explicabo quam
+                                laudantium voluptatem unde, ex necessitatibus blanditiis. Tempore, architecto.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur obcaecati
+                                in
+                                eligendi omnis sequi nostrum sunt maxime officiis consectetur voluptatum nulla
+                                similique
+                                quaerat earum, molestiae laboriosam veritatis optio beatae repellat.</p>
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/consultant.jpg" alt="photo">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="txt-container">
+                            <p class="firstline">Причина доверять нам</p>
+                            <h3>Преподаватели-практики</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a explicabo quam
+                                laudantium voluptatem unde, ex necessitatibus blanditiis. Tempore, architecto.
+                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, recusandae!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ad dolores
+                                nulla
+                                quibusdam?</p>
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/specialist.jpg" alt="photo">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="txt-container">
+                            <p class="firstline">Причина учиться у нас</p>
+                            <h3>Разносторонний подход к обучению</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a explicabo quam
+                                laudantium voluptatem unde, ex necessitatibus blanditiis. Tempore, architecto.
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi esse perferendis
+                                molestiae
+                                maxime, voluptate facere! Perferendis enim praesentium similique? Nesciunt at et
+                                nemo
+                                ratione necessitatibus hic aut culpa pariatur eaque tempora, reprehenderit, ex,
+                                expedita
+                                itaque iure quaerat officiis dolorum totam.</p>
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/webinar.jpg" alt="photo">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="txt-container">
+                            <p class="firstline">И самое главное</p>
+                            <h3>Гарантия результата</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus a explicabo quam
+                                laudantium voluptatem unde, ex necessitatibus blanditiis. Tempore, architecto.
+                            </p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum maxime est ipsa
+                                ad perspiciatis mollitia.</p>
+                        </div>
+                        <div class="img-container">
+                            <img src="./img/result.jpg" alt="photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="slider-container">
+            <div class="slideline">
+                <div class="slide img-container"><img src="./img/banner1.png" alt="BANNER"></div>
+                <div class="slide img-container"><img src="./img/banner2.png" alt="BANNER"></div>
+                <div class="slide img-container"><img src="./img/banner3.png" alt="BANNER"></div>
+                <div class="slide img-container"><img src="./img/banner4.png" alt="BANNER"></div>
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <div class="headpanel">
+            <div class="menu">
+                <div class="button-container">
+                    <button data-product-cathegory="all">Все категории</button>
+                </div>
+                <div class="button-container">
+                    <button data-product-cathegory="FrontEnd">FrontEnd</button>
+                </div>
+                <div class="button-container">
+                    <button data-product-cathegory="BackEnd">BackEnd</button>
+                </div>
+                <div class="button-container">
+                    <button data-product-cathegory="Design">Дизайн</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="product" data-product-id="0" data-product-price="2400" data-product-cathegory="FrontEnd">
+                <div class="img-container"><img src="./img/product0.png" alt="PRODUCT"></div>
+                <div class="txt-container">
+                    <h3>Базовая вёрстка HTML5 + CSS3</h3>
+                    <ul>
+                        <li>Основной HTML</li>
+                        <li>Основной CSS</li>
+                        <li>Свой учебный проект</li>
+                        <li>Вёрстка и размещение резюме в интернете</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, porro distinctio. Eligendi
+                        aliquid pariatur expedita a provident voluptas, nesciunt deleniti?</p>
+                </div>
+                <div class="footer">
+                    <p class="cathegory">Категория: <span></span></p>
+                    <div class="purchase-block">
+                        <div class="button-container">
+                            <button class="buy">В корзину</button>
+                        </div>
+                        <div class="button-container">
+                            <button class="details">Подробнее</button>
+                        </div>
+                        <p class="price"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product" data-product-id="1" data-product-price="5200" data-product-cathegory="FrontEnd">
+                <div class="img-container"><img src="./img/product1.jpg" alt="PRODUCT"></div>
+                <div class="txt-container">
+                    <h3>Продвинутая вёрстка HTML5 + CSS3</h3>
+                    <ul>
+                        <li>Основной + продвинутый HTML</li>
+                        <li>Основной + продвинутый CSS</li>
+                        <li>Свой учебный проект</li>
+                        <li>Автоматизация работы с Gulp</li>
+                        <li>Создание проектов для портфолио</li>
+                        <li>Вёрстка и размещение резюме в интернете</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatem accusantium magni illum
+                        quis harum aut ad rerum exercitationem. Expedita qui amet voluptates laudantium omnis
+                        consequuntur harum neque quae soluta.</p>
+                </div>
+                <div class="footer">
+                    <p class="cathegory">Категория: <span></span></p>
+                    <div class="purchase-block">
+                        <div class="button-container">
+                            <button class="buy">В корзину</button>
+                        </div>
+                        <div class="button-container">
+                            <button class="details">Подробнее</button>
+                        </div>
+                        <p class="price"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product" data-product-id="2" data-product-price="7100" data-product-cathegory="FrontEnd">
+                <div class="img-container"><img src="./img/product2.jpg" alt="PRODUCT"></div>
+                <div class="txt-container">
+                    <h3>Программирование на JavaScript</h3>
+                    <ul>
+                        <li>Основной JS</li>
+                        <li>Браузерный JS</li>
+                        <li>Продвинутый JS</li>
+                        <li>Сервер на Node.js</li>
+                        <li>Свой учебный проект</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde praesentium, culpa ullam aut ea voluptates qui? Error, voluptas iure? Fuga libero maiores beatae.</p>
+                </div>
+                <div class="footer">
+                    <p class="cathegory">Категория: <span>FrontEnd</span></p>
+                    <div class="purchase-block">
+                        <div class="button-container">
+                            <button class="buy">В корзину</button>
+                        </div>
+                        <div class="button-container">
+                            <button class="details">Подробнее</button>
+                        </div>
+                        <p class="price"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product" data-product-id="3" data-product-price="10500" data-product-cathegory="BackEnd">
+                <div class="img-container"><img src="./img/product3.png" alt="PRODUCT"></div>
+                <div class="txt-container">
+                    <h3>BackEnd на Python + Django</h3>
+                    <ul>
+                        <li>Язык Python</li>
+                        <li>Фреймворк Django</li>
+                        <li>Базы данных SQL</li>
+                        <li>Серверные ОС</li>
+                        <li>Свой учебный проект</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloribus? Repudiandae cumque, nemo aspernatur harum labore quidem veritatis natus accusantium.</p>
+                </div>
+                <div class="footer">
+                    <p class="cathegory">Категория: <span></span></p>
+                    <div class="purchase-block">
+                        <div class="button-container">
+                            <button class="buy">В корзину</button>
+                        </div>
+                        <div class="button-container">
+                            <button class="details">Подробнее</button>
+                        </div>
+                        <p class="price"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product" data-product-id="4" data-product-price="8900" data-product-cathegory="BackEnd">
+                <div class="img-container"><img src="./img/product4.jpg" alt="PRODUCT"></div>
+                <div class="txt-container">
+                    <h3>BackEnd на PHP + Laravel</h3>
+                    <ul>
+                        <li>Язык PHP</li>
+                        <li>Фреймворк Laravel</li>
+                        <li>Базы данных SQL</li>
+                        <li>Серверные ОС</li>
+                        <li>Свой учебный проект</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis itaque molestias enim fuga odio porro in fugiat voluptas corrupti cum?</p>
+                </div>
+                <div class="footer">
+                    <p class="cathegory">Категория: <span></span></p>
+                    <div class="purchase-block">
+                        <div class="button-container">
+                            <button class="buy">В корзину</button>
+                        </div>
+                        <div class="button-container">
+                            <button class="details">Подробнее</button>
+                        </div>
+                        <p class="price"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="product" data-product-id="5" data-product-price="3600" data-product-cathegory="Design">
+                <div class="img-container"><img src="./img/product5.jpg" alt="PRODUCT"></div>
+                <div class="txt-container">
+                    <h3>Веб-дизайн</h3>
+                    <ul>
+                        <li>Основы дизайна</li>
+                        <li>Особенности веб-дизайна</li>
+                        <li>Создание логотипа в Illustrator</li>
+                        <li>Создание макета в Photoshop или Figma</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur ex laborum quo!</p>
+                </div>
+                <div class="footer">
+                    <p class="cathegory">Категория: <span></span></p>
+                    <div class="purchase-block">
+                        <div class="button-container">
+                            <button class="buy">В корзину</button>
+                        </div>
+                        <div class="button-container">
+                            <button class="details">Подробнее</button>
+                        </div>
+                        <p class="price"></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>ООО "LearnBox" 2023</p>
+        </div>
+    </footer>
+    <div class="blackbanner">
+        <div class="details">
+            <div class="product">
+                <div class="purchase-block">
+                    
+                    <div class="button-container">
+                        <p class="price">10000 Р</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="buy">В корзину</button>
+                    </div>
+                    <div class="button-container">
+                        <button class="close">Закрыть</button>
+                    </div>
+                </div>
+                <div class="height-fix" style="height: 60px;"></div>
+            </div>
+        </div>
+        <div class="shopcart">
+            <button class="close">Закрыть</button>
+            <div class="form">
+                <input type="text" id="name" placeholder="Фамилия Имя Отчество">
+                <input type="text" id="phone" placeholder="Телефон">
+                <input type="text" id="email" placeholder="E-Mail">
+                <button>Отправить</button>
+            </div>
+            <div class="products-list">
+                <div class="hpanel">
+                    <p class="products-count">Товаров : <span>0</span></p>
+                    <p class="products-sum">Сумма : <span>0</span></p>
+                </div>
+                <div class="list"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/main-slider.js"></script>
+<script src="./js/auto-slider.js"></script>
+<script src="./js/products.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/shopcart.js"></script>
+</html>
