@@ -127,11 +127,11 @@ function sortProducts(event) {
 
 // По идее, эти данные должны в JSON формате присылаться с сервера.
 // Однако, этот проект не предполагает использование сервера.
-// Поэтому, эти данные для подробного описания будут записаны здесь и итолько для нескольких товаров.
+// Поэтому, эти данные для подробного описания будут записаны здесь и только для нескольких товаров.
 const productData = 
 {
-    0: [        // Обозначает ID товара
-        // Данные "приходят" в виде массива с HTML элементами
+    0: [ // Обозначает ID товара
+         // Данные для каждого товара "приходят" в виде массива с HTML элементами
         "<h3>Базовая вёрстка HTML5 + CSS3</h3>",
         "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti minima magnam perspiciatis dignissimos maxime esse officia voluptates error iusto at, debitis ut ea qui exercitationem non ab eos commodi beatae, molestiae voluptatibus cumque! Ratione vitae mollitia expedita quibusdam consequatur.</p>",
             `<ul>

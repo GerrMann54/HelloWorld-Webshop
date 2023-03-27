@@ -97,9 +97,42 @@ function ShopCart() {
     this.button.addEventListener('click', this.open);
     this.buttonClose.addEventListener('click', this.close); 
 
-    this.formHandler = () => {
-        
+    this.clientNameInput = document.querySelector('.blackbanner .shopcart #name');
+    this.clientPhoneInput = document.querySelector('.blackbanner .shopcart #phone');
+    this.clientEmailInput = document.querySelector('.blackbanner .shopcart #email');
+    this.sentClientDataButton = document.querySelector('.blackbanner .shopcart .form button');
+
+    this.sentClientData = () => {
+
+        console.log('Sending client data...');
+        console.log('Name: ' + this.clientNameInput.value);
+        console.log('Phone: ' + this.clientPhoneInput.value);
+        console.log('E-Mail: ' + this.clientEmailInput.value);
+        console.log('Product ID list: ' + this.productIdList)
+        this.sentClientDataButton.innerHTML = 'Спасибо! Скоро мы с Вами свяжемся'
+        this.sentClientDataButton.removeEventListener('click', this.sentClientData);
     }
+
+    this.formHandler = () => {
+
+        if (this.clientNameInput.value.length > 0 &&
+            this.clientPhoneInput.value.length > 0 &&
+            this.clientEmailInput.value.length > 0) {
+
+                this.sentClientDataButton.classList.add('unlocked');
+                this.sentClientDataButton.addEventListener('click', this.sentClientData);
+        }
+
+        else {
+            this.sentClientDataButton.classList.remove('unlocked');
+            this.sentClientDataButton.innerHTML = 'Отправить';
+            this.sentClientDataButton.removeEventListener('click', this.sentClientData);
+        }
+    }
+
+    this.clientNameInput.addEventListener('input', this.formHandler);
+    this.clientPhoneInput.addEventListener('input', this.formHandler);
+    this.clientEmailInput.addEventListener('input', this.formHandler);
 }
 
 const shopCart = new ShopCart();
